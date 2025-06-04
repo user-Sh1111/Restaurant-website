@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header_line1">
+        <div class="header_logo">
+            <a href="index.html" aria-label="Return to homepage">
+                <img src="images/Logo.jpg" alt="Granada Logo" loading="lazy">
+            </a>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="menus.html" class="a-nav">Menus</a></li>
+                <li><a href="about.html" class="a-nav">About</a></li>
+                <li><a href="contact.html" class="a-nav">Contact</a></li>
+                <li><a href="banquet.html" class="a-nav">Banquet Service</a></li>
+            </ul>
+        </nav>
+        <div class="header_controls">
+            <span class="schedule">Mon-Sun, from 12:00 PM to 1:00 AM</span>
+            <span id="accountGreeting" style="display: none;"></span>
+            <button class="logout-btn" aria-label="Logout">Logout</button>
+            <button class="account-btn" aria-label="Account settings"><img src="images/account_icon.png" alt="Account Icon" class="account-icon"></button>
+            <div class="hamburger" aria-label="Toggle menu">☰</div>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1>Contact Us</h1>
+        <section class="contact-section" aria-labelledby="contact-info">
+            <div class="contact-info">
+                <h2 id="contact-info">Contact Information</h2>
+                <p>Address: 49 Kabanbay Batyr Avenue, Astana</p>
+                <p>Phone: +7 700 737 0050</p>
+                <p>Email: info@granada.com</p>
+                <p>Instagram: @granada.restaurant</p>
+            </div>
+        </section>
+        <div class="map-button-container">
+            <a href="https://www.google.com/maps/place/49+Kabanbay+Batyr+Ave,+Astana" target="_blank" rel="noopener">View on Google Maps</a>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0191475637!2d71.42913331531676!3d51.16910197958292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDEwJzA4LjgiTiA3McKwMjUnNDguOSJF!5e0!3m2!1sen!2s!4v1635783920148" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer_line2">
+        <div class="footer_socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://maps.google.com" target="_blank" rel="noopener">Where are we?</a>
+        </div>
+        <div class="footer_copy">© 2025, Granada. All rights reserved.</div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2 id="modal-title">Login / Register</h2>
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required aria-required="true">
+            </div>
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="audio/click-sound.mp3"></audio>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada - Banquet Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header_line1">
+        <div class="header_logo">
+            <a href="index.html" aria-label="Return to homepage">
+                <img src="images/Logo.jpg" alt="Granada Logo" loading="lazy">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="menus.html" class="a-nav">Menus</a></li>
+                <li><a href="about.html" class="a-nav">About</a></li>
+                <li><a href="contact.html" class="a-nav">Contact</a></li>
+                <li><a href="banquet.html" class="a-nav">Banquet Service</a></li>
+            </ul>
+        </nav>
+        <div class="header_controls">
+            <span class="schedule">Mon-Sun, from 12:00 PM to 1:00 AM</span>
+            <span class="account-greeting" id="accountGreeting" style="display: none;"></span>
+            <button class="account-btn" aria-label="Open login or register modal" style="display: inline-block;"><img src="images/account_icon.png" class="account-icon" alt="Account"></button>
+            <button class="logout-btn" style="display: none;">Logout</button>
+            <span class="hamburger" aria-label="Toggle navigation menu">☰</span>
+        </div>
+    </header>
+
+    <main class="content" style="padding: 30px 20px;">
+        <form class="banquet-form" id="banquetForm">
+            <h2>Banquet Service Request</h2>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" aria-required="true">
+                <span class="error-message" id="fullNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" required min="1" max="120" title="Must be between 1 and 120" aria-required="true">
+                <span class="error-message" id="guestsError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email" aria-required="true">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required pattern="\+?[0-9]{10,12}" title="Enter a valid phone number (10-12 digits)" aria-required="true">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="banquetType">Type of Banquet</label>
+                <select id="banquetType" required aria-required="true">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="error-message" id="banquetTypeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required min="2025-06-04" aria-required="true">
+                <span class="error-message" id="dateError"></span>
+            </div>
+            <div class="form-group">
+                <label for="startTime">Start Time</label>
+                <input type="time" id="startTime" required aria-required="true">
+                <span class="error-message" id="startTimeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="endTime">End Time</label>
+                <input type="time" id="endTime" required aria-required="true">
+                <span class="error-message" id="endTimeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" aria-describedby="additionalInfoDesc"></textarea>
+                <span id="additionalInfoDesc" class="sr-only">Optional field for additional banquet details</span>
+            </div>
+            <button type="submit">Send Request</button>
+        </form>
+    </main>
+
+    <footer class="footer_line2">
+        <div class="footer_socials">
+            <a href="https://instagram.com/granada.restaurant">Instagram</a>
+            <a href="https://maps.google.com/?q=49+Kabanbay+Batyr+Avenue,+Astana">Where are we?</a>
+        </div>
+        <div class="footer_copy">© 2025, Granada. All rights reserved.</div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2 id="modalTitle">Login / Register</h2>
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required aria-required="true">
+            </div>
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="audio/click-sound.mp3"></audio>
+</body>
+</html>

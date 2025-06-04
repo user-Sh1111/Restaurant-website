@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada - About</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header_line1">
+        <div class="header_logo">
+            <a href="index.html" aria-label="Return to homepage">
+                <img src="images/Logo.jpg" alt="Granada Logo" loading="lazy">
+            </a>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="menus.html" class="a-nav">Menus</a></li>
+                <li><a href="about.html" class="a-nav">About</a></li>
+                <li><a href="contact.html" class="a-nav">Contact</a></li>
+                <li><a href="banquet.html" class="a-nav">Banquet Service</a></li>
+            </ul>
+        </nav>
+        <div class="header_controls">
+            <span class="schedule">Mon-Sun, from 12:00 PM to 1:00 AM</span>
+            <span id="accountGreeting" style="display: none;"></span>
+            <button class="logout-btn" aria-label="Logout">Logout</button>
+            <button class="account-btn" aria-label="Account settings"><img src="images/account_icon.png" alt="Account Icon" class="account-icon" loading="lazy"></button>
+            <div class="hamburger" aria-label="Toggle menu">☰</div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="about-section" aria-labelledby="about-title">
+            <h1 id="about-title">GRANADA</h1>
+            <div class="about-grid">
+                <div class="about-block">
+                    <h2>Cuisine</h2>
+                    <p>Author's, fusion cuisine</p>
+                </div>
+                <div class="about-block">
+                    <h2>Average Bill</h2>
+                    <p>7000 ₸ per person</p>
+                </div>
+                <div class="about-block seating-block">
+                    <h2>Seating Capacity</h2>
+                    <p>120 seats</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature">📶 Wi-Fi</div>
+                    <div class="feature">🎵 Background music</div>
+                    <div class="feature">🚗 Free parking</div>
+                    <div class="feature">⏰ Opening hours: 12:00–01:00, Mon–Sun</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer_line2">
+        <div class="footer_socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://maps.google.com" target="_blank" rel="noopener">Where are we?</a>
+        </div>
+        <div class="footer_copy">© 2025, Granada. All rights reserved.</div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2 id="modal-title">Login / Register</h2>
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required aria-required="true">
+            </div>
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="audio/click-sound.mp3"></audio>
+</body>
+</html>

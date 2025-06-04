@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada Restaurant - Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header class="header_line1">
+        <div class="header_logo">
+            <a href="index.html" aria-label="Return to homepage">
+                <img src="images/Logo.jpg" alt="Granada Logo" loading="lazy">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="menus.html" class="a-nav">Menus</a></li>
+                <li><a href="about.html" class="a-nav">About</a></li>
+                <li><a href="contact.html" class="a-nav">Contact</a></li>
+                <li><a href="banquet.html" class="a-nav">Banquet Service</a></li>
+            </ul>
+        </nav>
+        <div class="header_controls">
+            <span class="schedule">Mon-Sun, from 12:00 PM to 1:00 AM</span>
+            <span class="account-greeting" id="accountGreeting" style="display: none;"></span>
+            <button class="account-btn" aria-label="Open login or register modal" style="display: inline-block;"><img src="images/account_icon.png" class="account-icon" alt="Account"></button>
+            <button class="logout-btn" style="display: none;">Logout</button>
+            <span class="hamburger" aria-label="Toggle navigation menu">☰</span>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1>Menu</h1>
+        <section class="menu-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <h2>SALADS</h2>
+                        <ul>
+                            <li>Eggplant with Nut Sauce <span>2950</span></li>
+                            <li>Greek Salad with Mozzarella <span>3150</span></li>
+                            <li>Adana Salad <span>2850</span></li>
+                            <li>Tabouli Salad <span>2750</span></li>
+                            <li>Blush Salad <span>2950</span></li>
+                            <li>Iskry Salad with Veal <span>3650</span></li>
+                            <li>Salad with Tongue and Mushrooms <span>2950</span></li>
+                            <li>Salad with Veal and Green Vegetables <span>3350</span></li>
+                            <li>Seafood Salad <span>2950</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>FIRST COURSES</h2>
+                        <ul>
+                            <li>Homemade Soup with Veal and Vegetables <span>2650</span></li>
+                            <li>Ramen with Veal <span>3050</span></li>
+                            <li>Cheese Soup with Shrimp <span>3050</span></li>
+                            <li>Tom Yum with Seafood <span>3750</span></li>
+                            <li>Kharcho Soup <span>2450</span></li>
+                            <li>Cream of Cauliflower Soup <span>2150</span></li>
+                            <li>Soup with Meatballs <span>2250</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>GRILLED HOT DISHES</h2>
+                        <ul>
+                            <li>Ribeye Mix <span>6950</span></li>
+                            <li>T-Bone Mix <span>6950</span></li>
+                            <li>Exquisite Veal <span>5950</span></li>
+                            <li>Lyulya Kebab <span>3350</span></li>
+                            <li>Philadelphia Salad <span>3650</span></li>
+                            <li>Chicken Shashlik <span>3950</span></li>
+                            <li>Veal Shashlik <span>4150</span></li>
+                            <li>Vegetable Shashlik <span>3850</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <h2>HOT DISHES</h2>
+                        <ul>
+                            <li>Georgian Khinkali with Chicken <span>1650</span></li>
+                            <li>Chicken Fillet with Vegetable Sauce <span>2350</span></li>
+                            <li>Fish Fillet in Nagare <span>2150</span></li>
+                            <li>Seafood Shashlik <span>2250</span></li>
+                            <li>Homemade Shashlik <span>1950</span></li>
+                            <li>Rice <span>850</span></li>
+                            <li>French Fries <span>1250</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>MAIN COURSES</h2>
+                        <ul>
+                            <li>Mozzarella with Tomatoes <span>3650</span></li>
+                            <li>Chicken Breast with Cheese Sauce <span>3650</span></li>
+                            <li>Spikery with Veal <span>5650</span></li>
+                            <li>Homemade Mozzarella <span>3950</span></li>
+                            <li>Ojak with Seafood <span>4350</span></li>
+                            <li>Veal with Vegetables and Soy Sauce <span>3750</span></li>
+                            <li>Khinkali with Veal <span>3850</span></li>
+                            <li>Khinkali with Cheese (3 pcs) <span>2850</span></li>
+                            <li>Khinkali with Greens (3 pcs) <span>2850</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>SIDE DISHES</h2>
+                        <ul>
+                            <li>Corn with Garlic Sauce <span>1950</span></li>
+                            <li>Broccoli with Garlic Sauce <span>1950</span></li>
+                            <li>Rustic Potatoes <span>1050</span></li>
+                            <li>Rustic Potatoes (Small) <span>850</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <h2>DESSERTS</h2>
+                        <ul>
+                            <li>Napoleon <span>2500</span></li>
+                            <li>Three Chocolates <span>2500</span></li>
+                            <li>Honey Cake <span>2500</span></li>
+                            <li>Pavlova <span>2500</span></li>
+                            <li>Chocolate Khinkali <span>2500</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>WINES</h2>
+                        <ul>
+                            <li>Badzhusskaya Eggplant <span>1550</span></li>
+                            <li>Sansa with Meat and Eggplants <span>2750</span></li>
+                            <li>Bordeaux with Meat and Mozzarella <span>2450</span></li>
+                            <li>Bread Crust <span>1050</span></li>
+                            <li>Shotty <span>650</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>DISHES FOR SHARING</h2>
+                        <ul>
+                            <li>Festive Shashlik Assortment on the Grill <span>19250</span></li>
+                            <li>Meat Assortment on a Board <span>37500</span></li>
+                            <li>Roasted Lamb with Vegetables and Signature Sauce <span>56500</span></li>
+                            <li>Star on the Ship <span>65500</span></li>
+                            <li>Beindalyk <span>45000</span></li>
+                            <li>Roasted Lamb Chunks with Potatoes (6 months) <span>39950</span></li>
+                            <li>Grilled Vegetable Shashlik <span>59850</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <h2>DRINKS</h2>
+                        <ul>
+                            <li>Mojito with Tomatoes <span>3950</span></li>
+                            <li>Chicken Breast Drink <span>3150</span></li>
+                            <li>Mojito <span>2750</span></li>
+                            <li>Pinnero <span>3050</span></li>
+                            <li>Fizzy Arts <span>3950</span></li>
+                            <li>Homemade Khananur <span>3150</span></li>
+                            <li>Local Khananur <span>3550</span></li>
+                            <li>Homemade Khananur with Meat <span>3550</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>HOT APPETIZERS</h2>
+                        <ul>
+                            <li>Cheese with Vegetable Sauce <span>3750</span></li>
+                            <li>Grilled Sausage with Spicy Sauce (Vegetables/Chicken) <span>3550</span></li>
+                            <li>Lyulya with My Meat <span>3050</span></li>
+                            <li>Chicken Roll with Shashlik Sauce <span>3750</span></li>
+                            <li>Beef Rolls with Shashlik Sauce <span>3950</span></li>
+                            <li>Rumyany with Tongue and Fried <span>2950</span></li>
+                            <li>Rumyany with Hariki Fried <span>2950</span></li>
+                            <li>Shrimp Bowl <span>3950</span></li>
+                            <li>Champignon Shashlik with Steamed Fried Mushrooms <span>3350</span></li>
+                            <li>Raw Meat Start <span>3450</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <h2>JUICES</h2>
+                        <ul>
+                            <li>Pear Juice <span>650</span></li>
+                            <li>Blackcurrant Juice <span>650</span></li>
+                            <li>Tar-Mai Juice <span>650</span></li>
+                            <li>Shashlik Juice <span>650</span></li>
+                            <li>Meat Juice <span>650</span></li>
+                            <li>Kemir Juice <span>550</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer_line2">
+        <div class="footer_socials">
+            <a href="https://instagram.com/granada.restaurant">Instagram</a>
+            <a href="https://maps.google.com/?q=49+Kabanbay+Batyr+Avenue,+Astana">Where are we?</a>
+        </div>
+        <div class="footer_copy">© 2025, Granada. All rights reserved.</div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2 id="modalTitle">Login / Register</h2>
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required aria-required="true">
+            </div>
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="audio/click-sound.mp3"></audio>
+</body>
+</html>
